@@ -21,6 +21,6 @@ jobs:
       - name: Fetch data 
         uses: githubocto/flat@v2
         with:
-          http_url: "https://platzi.com/p/eperedo"
-          downloaded_filename: profile.html
+          http_url: "https://cuantoestaeldolar.pe/"
+          downloaded_filename: dolar.html
           # postprocess: postprocess.js
