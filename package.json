@@ -1,0 +1,19 @@
+{
+  "name": "sunedu",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eperedo/flat-data-sunedu.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eperedo/flat-data-sunedu/issues"
+  },
+  "homepage": "https://github.com/eperedo/flat-data-sunedu#readme",
+  "dependencies": {
+    "convert-excel-to-json": "1.7.0"
+  }
+}
