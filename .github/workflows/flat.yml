@@ -21,6 +21,6 @@ jobs:
       - name: Fetch data 
         uses: githubocto/flat@v2
         with:
-          http_url: "https://cuantoestaeldolar.pe/"
-          downloaded_filename: dolar.html
-          # postprocess: postprocess.js
+          http_url: "https://www.datosabiertos.gob.pe/sites/default/files/Licenciamiento%20Institucional_5.xls"
+          downloaded_filename: sunedu.xlsx
+          postprocess: postprocess.js
