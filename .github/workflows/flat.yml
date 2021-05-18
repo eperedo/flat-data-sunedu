@@ -16,16 +16,14 @@ jobs:
       - name: Check out repo
         uses: actions/checkout@v2
       # This step installs Deno, which is a new Javascript runtime that improves on Node. We'll use it for postprocessing later
-      - name: Setup Node
-        uses: actions/setup-node@v2
+      - name: Setup deno
+        uses: denoland/setup-deno@main
         with:
-          node-version: '14.17'
-      - name: Installing dependencies
-        run: npm install
+          deno-version: v1.x
       # The third step is a Flat Action step. We fetch the data in the http_url and save it as downloaded_filename
       - name: Fetch data 
         uses: githubocto/flat@v2
         with:
           http_url: "https://www.datosabiertos.gob.pe/sites/default/files/Licenciamiento%20Institucional_6.csv" # The data to fetch every 5 minutes
-          downloaded_filename: sunedu.json # The http_url gets saved and renamed in our repository as btc-price.json
+          downloaded_filename: sunedu.xlsx # The http_url gets saved and renamed in our repository as btc-price.json
           postprocess: postprocess.js # A postprocessing javascript or typescript file written in Deno
