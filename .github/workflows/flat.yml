@@ -20,6 +20,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '14.17'
+      - name: Installing dependencies
         run: npm install
       # The third step is a Flat Action step. We fetch the data in the http_url and save it as downloaded_filename
       - name: Fetch data 
