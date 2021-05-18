@@ -24,6 +24,6 @@ jobs:
       - name: Fetch data 
         uses: githubocto/flat@v2
         with:
-          http_url: "https://www.datosabiertos.gob.pe/sites/default/files/Licenciamiento%20Institucional_6.csv" # The data to fetch every 5 minutes
-          downloaded_filename: sunedu.json # The http_url gets saved and renamed in our repository as btc-price.json
+          http_url: "https://www.datosabiertos.gob.pe/sites/default/files/Licenciamiento%20Institucional_5.xls" # The data to fetch every 5 minutes
+          downloaded_filename: sunedu.xlsx # The http_url gets saved and renamed in our repository as btc-price.json
           postprocess: postprocess.js # A postprocessing javascript or typescript file written in Deno
